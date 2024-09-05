@@ -11,7 +11,6 @@ const root = ReactDOM.createRoot(
 );
 
 const App = () => {
-
   const router = createBrowserRouter([
     {
       path: '/',
