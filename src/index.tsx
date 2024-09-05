@@ -1,14 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import PacienteCadastro from './pages/paciente-cadastro';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const App = () => {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <PacienteCadastro />
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
+};
+
 root.render(
   <React.StrictMode>
-    <div>a</div>
+    <App />
   </React.StrictMode>
 );
 

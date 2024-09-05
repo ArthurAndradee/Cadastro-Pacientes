@@ -1,6 +1,6 @@
 import './paciente-cadastro.css'
 
-function pacienteCadastro() {
+function PacienteCadastro() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function pacienteCadastro() {
     );
 }
 
-export default pacienteCadastro;
+export default PacienteCadastro;
